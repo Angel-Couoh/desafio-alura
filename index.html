@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ENCRIPTADO DE TEXTO</title>
+        <link rel="stylesheet" href="reset.css"/>
+        <link rel="shortcut icon" href="imagenes/camdado.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="imagenes/Logo.jpg">  <!-- para poner imagen-->
+        </header>
+        <main>
+            <section class="seccion1"> <!-- parte donde va el texto-->
+                <div class="contenedor-texto">
+                    <textarea placeholder="Ingrese el texto aqui" class="caja-texto"></textarea>                   
+                </div>
+                <div class="alerta">
+                    <img src="imagenes/intero.png">
+                    <p>Solo letras minusculas y sin acento</p>
+                </div>
+                <div class="contenedor-botones"><!-- para los botones-->
+                    <input type="button" class="btnencriptar" value="encriptar">
+                    <input type="button" class="btndesencriptar" value="Desencriptar">
+                </div>
+            </section>
+            <section class="seccion2"> <!-- parte dos donde va el muñeco-->
+                <div class="contenedormunieco">
+                    <img src="imagenes/Muñeco.jpg">
+                </div>
+                <div class="contenedorparrafo">
+                    <h3> Ningun mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="contenedor-copiar"> <!--boton de copiar-->
+                    <input type="button" class="btn-copiar" value="copiar">
+                </div>
+                <div class="contenedor-resultado">
+                    <p class="texto-resultado">   </p>
+                </div>
+            </section>
+        </main>
+        <script src="index.js"></script>
+        
+    </body>
+</html>
